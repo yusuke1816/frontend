@@ -23,7 +23,7 @@ const Page = () => {
 
         try {
             // FlaskバックエンドへPOSTリクエストを送信
-            const response = await axios.post('http://localhost:5001/upload', formData, {
+            const response = await axios.post('http://localhost:5000/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
